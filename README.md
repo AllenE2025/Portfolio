@@ -1,18 +1,28 @@
 # David Allen Evangelista Portfolio
 
-This is a **personal portfolio website** built with **Vue 3** and **Tailwind CSS**. It showcases my projects, skills, and ways to get in touch, all in a modern and responsive design.  
+Welcome to my **personal portfolio website**, built with **Vue 3** and **Tailwind CSS**. This site is designed to showcase my skills, projects, and ways to connect with me, all within a modern, responsive, and user-friendly interface.
 
-The website includes the following sections:  
+## Features
 
-- **Hero**: Introduction and brief tagline  
-- **About**: Information about me and my experience  
-- **Projects**: Showcase of my projects and work  
-- **Contact**: Contact form and social links  
+The portfolio includes the following sections:
 
-The design features:  
+- **Hero** – A brief introduction with a tagline.
+- **About** – Information about my background, experience, and technical expertise.
+- **Projects** – A showcase of my personal and collaborative projects, including the tech stacks used.
+- **Contact** – Social links for professional connections and inquiries.
 
-- Clear and readable layout  
-- Interactive buttons and hover effects  
-- Fully responsive layout for desktop and mobile  
+### Design Highlights
 
-This portfolio is intended to present my work professionally and provide an aesthetic, user-friendly experience for visitors.
+- Clean, readable, and visually appealing layout
+- Interactive buttons and hover effects for better user experience
+- Fully responsive design, optimized for both desktop and mobile
+
+## Technology Stack
+
+- **Frontend:** Vue 3, Tailwind CSS
+- **Icons & Visuals:** Iconify
+- **Deployment:** Vercel
+
+## Purpose
+
+This portfolio serves as a professional showcase of my work, demonstrating my capabilities as a full-stack developer and providing an accessible way for potential collaborators, employers, or clients to explore my projects and connect with me.

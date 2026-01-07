@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Vue.js",
+    "icon": "logos:vue",
+    "category": "frontend"
+  },
+  {
+    "name": "Tailwind CSS",
+    "icon": "logos:tailwindcss-icon",
+    "category": "frontend"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "logos:javascript"
+  },
+  {
+    "name": "TypeScript",
+    "icon": "logos:typescript-icon"
+  },
+  {
+    "name": "Laravel",
+    "icon": "logos:laravel"
+  },
+  {
+    "name": "Next.js",
+    "icon": "logos:nextjs-icon"
+  },
+  {
+    "name": "Supabase",
+    "icon": "logos:supabase-icon"
+  },
+  {
+    "name": "MySQL",
+    "icon": "logos:mysql"
+  },
+  {
+    "name": "Git",
+    "icon": "logos:git-icon"
+  }
+]

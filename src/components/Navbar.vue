@@ -1,17 +1,19 @@
 <template>
-    <nav class="fixed top-0 w-full z-50 text-white backdrop-blur">
+    <nav class="fixed top-0 w-full z-50 text-white backdrop-blur bg-black/40">
         <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="text-xl font-medium">David Allen</div>
+            <div class="text-2xl font-medium">Portfolio</div>
 
-            <!-- Desktop links -->
+            <!-- Desktop Links -->
             <ul class="hidden md:flex space-x-6">
-                <li><a href="#hero" class="inline-block transition-all hover:text-yellow-600 hover:scale-105 font-medium">Home</a></li>
-                <li><a href="#about" class="inline-block transition-all hover:text-yellow-600 hover:scale-105 font-medium">About</a></li>
-                <li><a href="#projects" class="inline-block transition-all hover:text-yellow-600 hover:scale-105 font-medium">Projects</a></li>
-                <li><a href="#contact" class="inline-block transition-all hover:text-yellow-600 hover:scale-105 font-medium">Contact</a></li>
+                <li v-for="item in navItems" :key="item.name">
+                    <a :href="item.href"
+                        class="inline-block text-xl font-medium transition-all hover:text-yellow-500 hover:scale-105 active:text-yellow-600">
+                        {{ item.name }}
+                    </a>
+                </li>
             </ul>
 
-            <!-- Mobile menu button -->
+            <!-- Mobile Menu Button -->
             <button @click="menuOpen = !menuOpen" class="md:hidden focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
@@ -23,13 +25,14 @@
             </button>
         </div>
 
-        <!-- Mobile links -->
+        <!-- Mobile Links -->
         <div v-show="menuOpen" class="md:hidden">
-            <ul class="flex flex-col space-y-2 px-4 py-2">
-                <li><a href="#hero" @click="menuOpen = false">Home</a></li>
-                <li><a href="#about" @click="menuOpen = false">About</a></li>
-                <li><a href="#projects" @click="menuOpen = false">Projects</a></li>
-                <li><a href="#contact" @click="menuOpen = false">Contact</a></li>
+            <ul class="flex flex-col space-y-2 px-4 py-2 bg-black/80">
+                <li v-for="item in navItems" :key="item.name">
+                    <a :href="item.href" @click="menuOpen = false" class="block text-white hover:text-yellow-500">
+                        {{ item.name }}
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -37,5 +40,13 @@
 
 <script setup>
 import { ref } from 'vue'
+
 const menuOpen = ref(false)
+
+const navItems = [
+    { name: 'Home', href: '#hero' },
+    { name: 'About', href: '#about' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Contact', href: '#contact' },
+]
 </script>
