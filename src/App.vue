@@ -1,18 +1,18 @@
 <template>
   <AppLayout>
-    <section id="hero" class="min-h-screen flex items-center justify-center">
+    <section id="hero" class="min-h-screen flex items-center justify-center ">
       <Hero />
     </section>
 
-    <section id="about" class="min-h-screen flex items-center justify-center">
+    <section id="about" class="min-h-screen flex items-center justify-center ">
       <About />
     </section>
 
-    <section id="projects" class="min-h-screen flex items-center justify-center">
+    <section id="projects" class="min-h-screen flex items-center justify-center ">
       <Projects />
     </section>
 
-    <section id="contact" class="min-h-screen flex items-center justify-center">
+    <section id="contact" class="min-h-screen flex items-center justify-center ">
       <Contact />
     </section>
   </AppLayout>

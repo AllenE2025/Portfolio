@@ -1,14 +1,14 @@
 <template>
-    <nav class="fixed top-0 w-full bg-white shadow z-50">
+    <nav class="fixed top-0 w-full z-50 text-white backdrop-blur">
         <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="text-xl font-bold">David Allen</div>
+            <div class="text-xl font-medium">David Allen</div>
 
             <!-- Desktop links -->
             <ul class="hidden md:flex space-x-6">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#hero" class="inline-block transition-all hover:text-yellow-600 hover:scale-105 font-medium">Home</a></li>
+                <li><a href="#about" class="inline-block transition-all hover:text-yellow-600 hover:scale-105 font-medium">About</a></li>
+                <li><a href="#projects" class="inline-block transition-all hover:text-yellow-600 hover:scale-105 font-medium">Projects</a></li>
+                <li><a href="#contact" class="inline-block transition-all hover:text-yellow-600 hover:scale-105 font-medium">Contact</a></li>
             </ul>
 
             <!-- Mobile menu button -->
