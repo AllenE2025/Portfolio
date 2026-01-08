@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col min-h-screen bg-[radial-gradient(circle,_#1C1C1C,_#0A0A0A)] text-white">
+    <div class="flex flex-col min-h-screen bg-[radial-gradient(circle,#1C1C1C,#0A0A0A)] text-white">
         <!-- Navbar -->
         <Navbar />
 

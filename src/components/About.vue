@@ -5,51 +5,51 @@ import { Icon } from '@iconify/vue'
 
 <template>
   <div class="max-w-4xl mx-auto text-center md:text-left text-white place-items-center">
-    <!-- About Section -->
-    <h2 class="text-5xl font-bold mb-4">About Me</h2>
-    <div class="flex flex-col md:flex-row gap-10 p-5 rounded-md">
-      <p class="text-lg text-justify">
-        A Computer Engineering graduate from STI College Global City with a passion
-        for building robust and efficient software solutions. I specialize in full-stack development using
-        Vue.js, Laravel, and MySQL, and have hands-on experience with PHP, JavaScript, HTML, CSS, Node.js, and Python.
 
-        I enjoy turning complex problems into intuitive, user-friendly applications. Having worked on multiple
-        personal and collaborative projects, I constantly seek opportunities to learn, grow, and contribute to
-        meaningful projects.
 
-        In addition to coding, I focus on clean, maintainable code, collaborative teamwork, and leveraging
-        modern frameworks and tools to deliver quality software.
-      </p>
+    <h2 class="text-5xl font-bold mb-4 bg-clip-text text-transparent 
+             bg-linear-to-b from-white/60 via-yellow-400 to-yellow-600">
+      About Me
+    </h2>
+
+    <div class="flex flex-col md:flex-row gap-10 p-5 rounded-md relative bg-neutral-900 overflow-hidden shadow-xl">
+
+      <div class="pointer-events-none absolute top-0 left-0 right-0 h-0.75
+                  bg-linear-to-b from-white/10 to-transparent"></div>
+      <div class="absolute bottom-0 left-0 right-0 h-0.75 bg-linear-to-t from-black/30 to-transparent"></div>
+      <div class="relative bg-neutral-800 overflow-hidden rounded-md p-4 mb-6 shadow-inner">
+        <!-- Top gradient -->
+        <div class="absolute top-0 left-0 right-0 h-1 bg-linear-to-t from-transparent to-black/60 pointer-events-none">
+        </div>
+        <!-- Bottom gradient -->
+        <div
+          class="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-b from-transparent to-black/60 pointer-events-none">
+        </div>
+        <!-- Left gradient -->
+        <div class="absolute top-0 bottom-0 left-0 w-1 bg-linear-to-l from-transparent to-black/60 pointer-events-none">
+        </div>
+        <!-- Right gradient -->
+        <div
+          class="absolute top-0 bottom-0 right-0 w-1 bg-linear-to-r from-transparent to-black/60 pointer-events-none">
+        </div>
+        <p class="text-lg text-gray-300 leading-relaxed tracking-wide">
+          A Computer Engineering graduate from STI College Global City with a passion
+          for building robust and efficient software solutions. I specialize in full-stack development using
+          Vue.js, Laravel, and MySQL, and have hands-on experience with PHP, JavaScript, HTML, CSS, Node.js, and Python.
+
+          I enjoy turning complex problems into intuitive, user-friendly applications. Having worked on multiple
+          personal and collaborative projects, I constantly seek opportunities to learn, grow, and contribute to
+          meaningful projects.
+
+          In addition to coding, I focus on clean, maintainable code, collaborative teamwork, and leveraging
+          modern frameworks and tools to deliver quality software.
+        </p>
+
+      </div>
+
+
       <img src="../assets/formal-fullbody.jpg" class="w-80 rounded-md mx-auto md:mx-0" />
     </div>
-
-    <!-- Tech Stack Section -->
-    <section class="mt-12">
-      <h2 class="text-4xl font-bold mb-6 text-center md:text-left">Tech Stack</h2>
-
-      <!-- Scrollable carousel container -->
-      <div class="overflow-x-auto flex gap-6 py-4 px-2 scrollbar-hide">
-        <div
-          v-for="tech in techStack"
-          :key="tech.name"
-          class="flex flex-col items-center min-w-[90px] shrink-0"
-        >
-          <Icon :icon="tech.icon" class="w-14 h-14 mb-2" :title="tech.name" />
-          <span class="text-sm font-medium text-center">{{ tech.name }}</span>
-        </div>
-      </div>
-    </section>
   </div>
 </template>
 
-<style>
-/* Hide scrollbars nicely */
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-</style>

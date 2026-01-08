@@ -1,5 +1,34 @@
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const scrolled = ref(false)
+
+const menuOpen = ref(false)
+
+const navItems = [
+    { name: 'Home', href: '#hero' },
+    { name: 'About', href: '#about' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Contact', href: '#contact' },
+]
+
+const handleScroll = () => {
+    scrolled.value = window.scrollY > 0
+}
+
+onMounted(() => {
+    window.addEventListener('scroll', handleScroll)
+
+})
+
+onUnmounted(() => {
+    window.removeEventListener('scroll', handleScroll)
+})
+</script>
 <template>
-    <nav class="fixed top-0 w-full z-50 text-white backdrop-blur bg-black/40">
+    <nav :class="['fixed top-0 w-full z-50 text-white backdrop-blur transition-all duration-300',
+        scrolled ? ' bg-black/40 shadow-lg' : 'bg-transparent'
+    ]">
         <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
             <div class="text-2xl font-medium">Portfolio</div>
 
@@ -7,7 +36,7 @@
             <ul class="hidden md:flex space-x-6">
                 <li v-for="item in navItems" :key="item.name">
                     <a :href="item.href"
-                        class="inline-block text-xl font-medium transition-all hover:text-yellow-500 hover:scale-105 active:text-yellow-600">
+                        class="inline-block text-xl font-medium transition-all hover:text-yellow-500 hover:scale-105 active:text-yellow-600 active:scale-95">
                         {{ item.name }}
                     </a>
                 </li>
@@ -37,16 +66,3 @@
         </div>
     </nav>
 </template>
-
-<script setup>
-import { ref } from 'vue'
-
-const menuOpen = ref(false)
-
-const navItems = [
-    { name: 'Home', href: '#hero' },
-    { name: 'About', href: '#about' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
-]
-</script>
