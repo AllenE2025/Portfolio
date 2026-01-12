@@ -6,7 +6,7 @@ Welcome to my **personal portfolio website**, built with **Vue 3** and **Tailwin
 
 The portfolio includes the following sections:
 
-- **Hero** – A brief introduction with a tagline.
+- **Hero** – A brief introduction with a tagline.d
 - **About** – Information about my background, experience, and technical expertise.
 - **Projects** – A showcase of my personal and collaborative projects, including the tech stacks used.
 - **Contact** – Social links for professional connections and inquiries.
