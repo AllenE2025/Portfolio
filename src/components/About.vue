@@ -1,6 +1,6 @@
 <script setup>
-import techStack from '../data/techStack.json'
-import { Icon } from '@iconify/vue'
+import techStack from '../data/techStack.json';
+import { Icon } from '@iconify/vue';
 </script>
 
 <template>
@@ -33,23 +33,15 @@ import { Icon } from '@iconify/vue'
           class="absolute top-0 bottom-0 right-0 w-1 bg-linear-to-r from-transparent to-black/60 pointer-events-none">
         </div>
         <p class="text-lg text-gray-300 leading-relaxed tracking-wide">
-          A Computer Engineering graduate from STI College Global City with a passion
-          for building robust and efficient software solutions. I specialize in full-stack development using
-          Vue.js, Laravel, and MySQL, and have hands-on experience with PHP, JavaScript, HTML, CSS, Node.js, and Python.
-
-          I enjoy turning complex problems into intuitive, user-friendly applications. Having worked on multiple
-          personal and collaborative projects, I constantly seek opportunities to learn, grow, and contribute to
-          meaningful projects.
-
-          In addition to coding, I focus on clean, maintainable code, collaborative teamwork, and leveraging
-          modern frameworks and tools to deliver quality software.
+          Full-Stack Developer with a passion for creating practical, user-focused applications. My experience spans
+          from building e-commerce backends handling thousands of daily transactions to developing mobile-first POS
+          systems. I thrive on turning technical challenges into elegant solutions.
         </p>
 
       </div>
 
 
-      <img src="../assets/formal-fullbody.jpg" class="w-80 rounded-md mx-auto md:mx-0" />
+      <img src="../assets/formal-fullbody.jpg" class="w-60 rounded-md mx-auto md:mx-0" />
     </div>
   </div>
 </template>
-

@@ -5,29 +5,32 @@
     "description": "A cross-platform mobile app built with React Native and Expo for reporting and managing waste and damage issues, featuring a clean interface, multi-language support, and easy access to scheduling, complaints, technical support, and emergencies.",
     "link": "https://github.com/AllenE2025/Ajmal-Waste-and-Damage-Solutions.git",
     "tech": [
-      { "name": "React Native", "icon": "logos:react" },
-      { "name": "Expo", "icon": "logos:expo" }
+      { "name": "React Native" },
+      { "name": "Laravel" },
+      { "name": "MySQL" }
     ]
   },
   {
     "id": 2,
-    "title": "Message Me",
-    "description": "A modern Next.js and Supabase demo app enabling user registration, login, and personalized pages, featuring a clean UI and smooth animations for a sleek experience.",
-    "link": "https://github.com/AllenE2025/Message-Me.git",
+    "title": "Pan De-Habibi POS",
+    "description": "A mobile-first Point of Sale system for a bakery, built with Vue 3 and TypeScript. Features offline-first architecture using IndexedDB, allowing cashiers to process sales without internet connectivity.",
+    "link": "https://github.com/AllenE2025/Pan-De-Habibi-Mobile.git",
     "tech": [
-      { "name": "Next.js", "icon": "logos:nextjs-icon" },
-      { "name": "Supabase", "icon": "logos:supabase-icon" }
+      { "name": "Vue 3" },
+      { "name": "TypeScript" },
+      { "name": "Tailwind CSS" }
     ]
   },
   {
     "id": 3,
-    "title": "MultiApp",
-    "description": "A technical assessment project showcasing Next.js, Supabase, and TypeScript skills, featuring multiple mini-apps demonstrating authentication, CRUD operations, and file storage.",
+    "title": "Barangay Issue System",
+    "description": "Community issue tracking system built with Laravel and Vue 3 that enables residents to report local problems and barangay officials to manage resolutions. Includes admin analytics dashboard, photo documentation, and a public transparency page showing resolved issues.",
     "link": "https://github.com/AllenE2025/MultiApp.git",
     "tech": [
-      { "name": "Next.js", "icon": "logos:nextjs-icon" },
-      { "name": "Supabase", "icon": "logos:supabase-icon" },
-      { "name": "TypeScript", "icon": "logos:typescript-icon" }
+      { "name": "Vue 3" },
+      { "name": "Laravel" },
+      { "name": "TypeScript" },
+      { "name": "Tailwind CSS" }
     ]
   },
   {
@@ -36,8 +39,10 @@
     "description": "A Vue 3 and Tailwind CSS app featuring an interactive database of Genshin Impact characters, regions, artifacts, and weapons, with search and filter options by element, weapon type, and rarity.",
     "link": "https://github.com/AllenE2025/Genshin-Archives.git",
     "tech": [
-      { "name": "Vue 3", "icon": "logos:vue" },
-      { "name": "Tailwind CSS", "icon": "logos:tailwindcss-icon" }
+      { "name": "Vue 3" },
+      { "name": "Laravel" },
+      { "name": "TypeScript" },
+      { "name": "Tailwind CSS" }
     ]
   }
 ]

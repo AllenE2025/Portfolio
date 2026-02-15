@@ -1,6 +1,6 @@
 <script setup>
-import { Icon } from '@iconify/vue'
-import projects from '../data/projects.json'
+import { Icon } from '@iconify/vue';
+import projects from '../data/projects.json';
 import techStack from '../data/techStack.json'
 
 </script>
@@ -65,12 +65,35 @@ import techStack from '../data/techStack.json'
         <h3 class="text-lg font-medium mb-2 text-gray-200 relative">
           Technologies Used
         </h3>
-        <div class="flex flex-wrap gap-6 relative">
-          <Icon v-for="tech in project.tech" :key="tech.name" :icon="tech.icon" class="w-12 h-12" :title="tech.name" />
+<div class="flex gap-2">
+          <div v-for="tech in project.tech" :key="tech.name" :icon="tech.icon" :title="tech.name"
+            class="relative bg-neutral-800 overflow-hidden rounded-md p-2 shadow-inner flex justify-center text-gray-300 w-auto">
+            <!-- Top gradient -->
+            <div
+              class="absolute top-0 left-0 right-0 h-1 bg-linear-to-t from-transparent to-black/60 pointer-events-none">
+            </div>
+            <!-- Bottom gradient -->
+            <div
+              class="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-b from-transparent to-black/60 pointer-events-none">
+            </div>
+            <!-- Left gradient -->
+            <div
+              class="absolute top-0 bottom-0 left-0 w-1 bg-linear-to-l from-transparent to-black/60 pointer-events-none">
+            </div>
+            <!-- Right gradient -->
+            <div
+              class="absolute top-0 bottom-0 right-0 w-1 bg-linear-to-r from-transparent to-black/60 pointer-events-none">
+            </div>
+
+            {{ tech.name }}
+
+          </div>
         </div>
+       
       </div>
     </div>
-    <section class="mt-12">
+
+    <!-- <section class="mt-12">
       <h2 class="text-4xl font-bold mb-6 bg-clip-text text-transparent 
            bg-linear-to-b from-white/60 via-yellow-400 to-yellow-600 text-center">
         Tech Stack
@@ -101,7 +124,7 @@ import techStack from '../data/techStack.json'
         <div class="pointer-events-none absolute top-0 right-0 bottom-0 w-16 
                 bg-linear-to-l from-neutral-900 to-transparent"></div>
       </div>
-    </section>
+    </section> -->
   </div>
 </template>
 
