@@ -25,7 +25,7 @@
     "id": 3,
     "title": "Barangay Issue System",
     "description": "Community issue tracking system built with Laravel and Vue 3 that enables residents to report local problems and barangay officials to manage resolutions. Includes admin analytics dashboard, photo documentation, and a public transparency page showing resolved issues.",
-    "link": "https://github.com/AllenE2025/MultiApp.git",
+    "link": "https://github.com/AllenE2025/Barangay-Issue-Reporting-System.git",
     "tech": [
       { "name": "Vue 3" },
       { "name": "Laravel" },
