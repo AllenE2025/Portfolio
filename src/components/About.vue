@@ -41,7 +41,7 @@ import { Icon } from '@iconify/vue';
       </div>
 
 
-      <img src="../assets/formal-fullbody.jpg" class="w-60 rounded-md mx-auto md:mx-0" />
+      <img src="../assets/formal-half.jpg" class="w-60 rounded-md mx-auto md:mx-0" />
     </div>
   </div>
 </template>
